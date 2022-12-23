@@ -23,3 +23,4 @@ func _process(delta):
 	velocity.x = for_speed
 		
 	move_and_slide(velocity, Vector2.UP)
+
