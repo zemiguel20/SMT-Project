@@ -24,6 +24,10 @@ config/name="SMT_Project"
 run/main_scene="res://scenes/Main.tscn"
 config/icon="res://assets/player/icon.png"
 
+[audio]
+
+default_bus_layout="res://smt_bus_layout.tres"
+
 [display]
 
 window/size/resizable=false
