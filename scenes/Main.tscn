@@ -1,12 +1,13 @@
 [gd_scene load_steps=4 format=2]
 
-[ext_resource path="res://Player.tscn" type="PackedScene" id=1]
-[ext_resource path="res://Block.tscn" type="PackedScene" id=2]
-[ext_resource path="res://Spikes.tscn" type="PackedScene" id=3]
+[ext_resource path="res://assets/player/Player.tscn" type="PackedScene" id=1]
+[ext_resource path="res://assets/objects/Block.tscn" type="PackedScene" id=2]
+[ext_resource path="res://scenes/Pause.tscn" type="PackedScene" id=3]
 
 [node name="Node2D" type="Node2D"]
 
 [node name="Guy" parent="." instance=ExtResource( 1 )]
+position = Vector2( -100, 0 )
 
 [node name="Camera2D" type="Camera2D" parent="Guy"]
 position = Vector2( 100, 0 )
@@ -20,5 +21,8 @@ position = Vector2( 424, 56 )
 position = Vector2( 384, 117 )
 scale = Vector2( 20, 1 )
 
-[node name="Spikes" parent="." instance=ExtResource( 3 )]
-position = Vector2( 271, 64 )
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+layer = 100
+
+[node name="Pause" parent="CanvasLayer" instance=ExtResource( 3 )]
+visible = false
