@@ -7,7 +7,6 @@
 [node name="Node2D" type="Node2D"]
 
 [node name="Guy" parent="." instance=ExtResource( 1 )]
-position = Vector2( -100, 0 )
 
 [node name="Camera2D" type="Camera2D" parent="Guy"]
 position = Vector2( 100, 0 )
@@ -22,4 +21,4 @@ position = Vector2( 384, 117 )
 scale = Vector2( 20, 1 )
 
 [node name="Spikes" parent="." instance=ExtResource( 3 )]
-position = Vector2( 203, 64 )
+position = Vector2( 271, 64 )
